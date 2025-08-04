@@ -3,13 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
+    <title>Jonathan G | Portfolio & LEGO Projects</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>Hello, HTML!</h1>
-    <p>This is a simple paragraph of text.</p>
-    <p>You can add more content here, like a <a href="https://www.google.com">link to Google</a>.</p>
-
+    <header>
+        <h1>Jonathan G</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#lego">LEGO Projects</a>
+            <a href="#contact">Contact</a>
+            <button class="nav-btn" onclick="document.getElementById('hobbies').scrollIntoView({behavior: 'smooth'})">Hobbies</button>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p>Hello! I'm Jonathan, a passionate builder and developer. Welcome to my portfolio and LEGO project showcase. Here you'll find my professional work and my favorite LEGO creations.</p>
+        </section>
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li>Web Development (HTML, CSS, JavaScript)</li>
+                <li>LEGO Design & Engineering</li>
+                <li>Creative Problem Solving</li>
+                <li>Project Management</li>
+            </ul>
+        </section>
+        <section id="hobbies">
+            <h2 class="section-title">Hobbies</h2>
+            <div id="hobbies-list">
+                <div class="hobby-card">Photography</div>
+                <div class="hobby-card">Traveling</div>
+                <div class="hobby-card">Gaming</div>
+                <div class="hobby-card">Music</div>
+                <div class="hobby-card">LEGO Collecting</div>
+            </div>
+        </section>
+        <section id="lego">
+            <h2 class="section-title">LEGO Projects</h2>
+            <div id="lego-projects">
+                <div class="lego-card">
+                    <img src="https://images.pexels.com/photos/163036/lego-blocks-toys-colorful-163036.jpeg?auto=compress&w=400" alt="LEGO Project 1">
+                    <h3>LEGO Supercar</h3>
+                    <p>A custom-built supercar with working suspension and steering.</p>
+                </div>
+                <div class="lego-card">
+                    <img src="https://images.pexels.com/photos/45170/lego-lego-figures-toys-children-45170.jpeg?auto=compress&w=400" alt="LEGO Project 2">
+                    <h3>LEGO Cityscape</h3>
+                    <p>A detailed city scene with modular buildings and vehicles.</p>
+                </div>
+                <div class="lego-card">
+                    <img src="https://images.pexels.com/photos/163036/lego-blocks-toys-colorful-163036.jpeg?auto=compress&w=400" alt="LEGO Project 3">
+                    <h3>LEGO Spaceship</h3>
+                    <p>An original spaceship design with moving parts and minifigures.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <p>Feel free to reach out via <a href="mailto:your.email@example.com">email</a> or connect with me on <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>.</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Jonathan G. All rights reserved.
+    </footer>
 </body>
 </html>
